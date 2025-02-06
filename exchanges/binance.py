@@ -17,5 +17,6 @@ class BinanceExchange(CexExchange):
         Використовується клієнт ccxt для Binance із ввімкненим лімітуванням запитів
         ('enableRateLimit': True), що допомагає уникнути перевищення обмежень API.
         """
-        client = ccxt.binance({'enableRateLimit': True})
+        client = ccxt.binanceus({'enableRateLimit': True})
         super().__init__('binance', client)
+
